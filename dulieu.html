@@ -41,16 +41,7 @@
         }
         h1{color:rgb(2, 11, 11);}
         a{color:#ff5e00;}
-        .blue {
-    background: blue;
-}
 
-        .red {
-    background: red;
-}
-.black{
-    background:black;
-}
        
 
    </style> 
@@ -77,7 +68,11 @@
     const btn = document.getElementById("myBtn");
 
     btn.onclick = function() {
-        btn.classList.toggle("red");
+         if (btn.style.background === "red") {
+            btn.style.background = "blue";
+        } else {
+            btn.style.background = "red";
+        }
     }
 
 </script>
